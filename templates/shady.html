@@ -2,23 +2,23 @@
 <html>
 <head>
 	<title>shady_ben_ami</title>
-	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<link rel = "stylesheet" type = "text/css" href = "{{url_for('static' , filename = 'style.css')}}">
 </head>
 <body>
 	<h1>Welcome!</h1>
+	<div id = "log_ins">
+		<form id = "forms">
+			<input type="text" name="fake_signin" placeholder="Username">
+			<input type="text" name="fake_password1" placeholder="Create Password">
+			<input type="submit" value="Submit">
+		</form>
 
-	<form>
-		<input type="text" name="fake_signin" placeholder="Username">
-		<input type="text" name="fake_password1" placeholder="Create Password">
-		<input type="submit" value="Submit">
-	</form>
-
-	<form>
-		<input type="text" name="fake_login" placeholder="Username">
-		<input type="text" name="fake_password" placeholder="Password">
-		<input type="submit" value="Submit">
-	</form>
-
+		<form id = "forms">
+			<input type="text" name="fake_login" placeholder="Username">
+			<input type="text" name="fake_password" placeholder="Password">
+			<input type="submit" value="Submit">
+		</form>
+	</div>
 	<a href = "file:///home/student/Desktop/APP/y2s19-heroku-demo/templates/Button.ht">Continue</a>
 </body>
 </html>
